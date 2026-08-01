@@ -1,0 +1,33 @@
+body{ height: 100vh;
+    background-image:linear-gradient(45deg,  #FFA4D0 0%,  #E887B5 25%, #D06B9B 50%,  #B84F81 75%,  #8A2E5D 100%)}
+  p{text-align: center; font-size: 20px;color: #a50a5a;}
+  blockquote{text-align: center;color: #a50a5a;}
+  nav{background: rgba(133, 57, 96, 0.137);backdrop-filter: blur(8px); width: 100%; position: fixed; padding: 18px 0; top: 0; left: 0; z-index: 10;}
+  nav ul{display:flex; justify-content:center; gap:20px; list-style:none;align-items: center;flex-wrap: wrap;padding: 0;margin: 0;}
+  nav a{text-decoration:none;color:rgba(255, 255, 255, 0.589); font: weight 600px; font-size: clamp(18px,2vw,30px);}
+.tituloinicial {height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
+.tituloinicial h1{font-size: 55px;color: rgb(116, 18, 99);margin-bottom: 25px; }
+.paragrafoinicial{max-width: 900px;font-size: 22px;line-height: 1.8;color: #a50a5a; margin-bottom: 80px;}
+.pictures{display: grid;margin: auto;grid-template-columns: repeat(3, 250px);justify-content: center;gap: 20px;}.pictures img{width: 250px;height: 330px;object-fit: cover;border-radius: 18px;}
+.memories {padding-top: 100px;padding-bottom: 80px;}
+.memories h1 {font-size: 48px;color: rgb(116, 18, 99);margin-bottom: 45px;text-align: center;}
+.gallery{padding-top: 120px;}
+.gallery h1{text-align: center; font-size: 48px;margin-bottom: 45px;color: rgb(116, 18, 99);}
+.photos{width: 100%;max-width: 1200px;margin: auto;height: 700px;position: relative;}
+.gif{position: absolute;border-radius: 18px;object-fit: cover;animation: float 6s ease-in-out infinite;}
+.g1{width: 180px;height: 260px;left: 18%;top: 90px;}
+.g2{width:130px;height:170px; left:39%;top:80px;animation-delay:1s;}
+.g3{width:260px;height:320px;right:16%;top:90px;animation-delay:2s;}
+.g4{  width:160px;  height:220px;  left:28%;  top:360px;animation-delay:3s;}
+.g5{ width:170px;height:240px;right:33%;top:390px;animation-delay:1.5s;}
+.g6{ width:120px;height:170px;right:10%;top:420px; animation-delay:2.5s;}
+@keyframes float{0%{transform: translateY(0px);}50%{transform: translateY(-18px);}100%{transform: translateY(0px);}}
+@media(max-width:900px){
+.photos{display:grid;grid-template-columns:repeat(2,1fr);gap:25px; height:auto;justify-items:center;}.gif{position:static;width:180px;height:250px;}
+.gallery h1{ font-size:42px;}}
+@media(max-width:500px){
+.photos{grid-template-columns:1fr;}
+.gif{width:90%;height:auto;}}
+.container{display: flex;justify-content: center;margin: 50px 0;}
+.container iframe {width: 800px;height: 450px;border-radius: 15px;}
+.musica{text-align: center;margin-top: 20px;}
