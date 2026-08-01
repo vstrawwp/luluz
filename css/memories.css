@@ -1,0 +1,13 @@
+.pictures{
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    justify-content: center;
+    gap: 15px;
+}
+
+.pictures img{
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+}
